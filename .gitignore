@@ -1,10 +1,7 @@
 node_modules/
 dist/
-coverage/
-playwright-report/
-test-results/
-*.local
-*.log
 *.tsbuildinfo
+.playwright/
+test-results/
 .DS_Store
 .commandcode/

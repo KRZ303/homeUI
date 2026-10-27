@@ -1,90 +1,116 @@
-export type DeviceKind = 'light' | 'climate' | 'media' | 'dishwasher' | 'scene' | 'sensor';
+export type WidgetType =
+  | 'slider_light'
+  | 'group_tile'
+  | 'scene_pill'
+  | 'vertical_blind'
+  | 'sensor_graph'
+  | 'matter_context_tile'
+  | 'hvac_global_modes'
+  | 'simple_thermostat'
+  | 'rich_ac_row'
+  | 'stateful_tv'
+  | 'stateful_dishwasher'
+  | 'robot_vacuum_tile'
+  | 'webrtc_camera_tile'
+  | 'closure_lock_tile'
+  | 'matter_smoke_alarm'
+  | 'matter_event_history'
+  | 'matter_fabric_hub'
 
-export interface Footprint {
-  columns: number;
-  rows: number;
+export interface Span { c: number; r: number }
+export interface TileButton {
+  id: string
+  label: string
+  icon: string
+  iconType?: 'lucide' | 'mdi'
+  active?: boolean
+  showLabel?: boolean
+  type?: 'oval_pill' | 'ghost_momentary'
+  brightness?: number
 }
-
+export interface GraphSeries {
+  id: string
+  label: string
+  current: string
+  unit: string
+  color: string
+  fill?: boolean
+  min: string
+  minTime: string
+  max: string
+  maxTime: string
+  points: number[]
+}
 export interface Device {
-  id: string;
-  roomId: string;
-  name: string;
-  kind: DeviceKind;
-  footprint: Footprint;
-  active: boolean;
-  canExpand?: boolean;
-  expanded?: boolean;
-  acceptsChildren?: boolean;
-  children?: string[];
-  groupedInto?: string;
-  brightness?: number;
-  currentTemperature?: number;
-  targetTemperature?: number;
-  temperatureUnit?: string;
-  mode?: string;
-  modes?: string[];
-  playing?: boolean;
-  volume?: number;
-  track?: number;
-  tracks?: string[];
-  program?: string;
-  programs?: string[];
-  options?: string[];
-  selectedOptions?: string[];
-  running?: boolean;
-  progress?: number;
-  value?: number;
-  unit?: string;
-  detail?: string;
+  id: string
+  column: string
+  type: WidgetType
+  matterType: string
+  title: string
+  icon?: string
+  iconType?: 'lucide' | 'mdi'
+  iconName?: string
+  span: Span
+  defaultSpan: Span
+  expanders: { down: boolean; right: boolean; diagonal: boolean }
+  expandedContent: { secondaryButtons: boolean; secondarySlider: boolean; presets: boolean }
+  nestedTiles: string[]
+  mainButtons?: TileButton[]
+  secondaryButtons?: TileButton[]
+  members?: TileButton[]
+  series?: GraphSeries[]
+  on?: boolean
+  active?: boolean
+  brightness?: number
+  customSubtitle?: string
+  powerWatts?: string
+  colorTemp?: number
+  position?: number
+  tilt?: number
+  soilMoisture?: string
+  activity?: string
+  soundContext?: string
+  prediction?: string
+  modes?: { cool: boolean; auto: boolean; heat: boolean }
+  demand?: number
+  targetTemp?: number
+  measuredTemp?: number
+  matterSuggestion?: { active: boolean; suggestedTemp: number; source: string; status: string }
+  fanSpeedPct?: number
+  volume?: number
+  source?: string
+  playing?: boolean
+  state?: 'idle' | 'running' | 'paused'
+  progress?: number
+  remainingMinutes?: number
+  delay?: string
+  programme?: string
+  cleanPlus?: boolean
+  speedPlus?: boolean
+  dryPlus?: boolean
+  battery?: number
+  mode?: string
+  rooms?: string[]
+  privacy?: boolean
+  ptzPreset?: string
+  detections?: string
+  locked?: boolean
+  lastActor?: string
+  mounted?: boolean
+  coPpm?: number
+  armed?: boolean
+  events?: { time: string; label: string }[]
+  threadNodes?: number
+  ecosystems?: string[]
+  steppedAreaPoints?: number[]
+  [key: string]: unknown
 }
-
-export interface Room {
-  id: string;
-  name: string;
-  note: string;
-  temperature: number;
-  humidity: number;
-  deviceIds: string[];
+export interface Lane {
+  id: string
+  title: string
+  subtitle: string
+  leadIcon: string
+  ticker: { icon: string; text: string }[]
+  entityIds: string[]
 }
-
-export interface HomeState {
-  rooms: Room[];
-  devices: Record<string, Device>;
-}
-
-export type HomeAction =
-  | { type: 'toggle-device'; deviceId: string }
-  | { type: 'set-brightness'; deviceId: string; value: number }
-  | { type: 'set-target'; deviceId: string; value: number }
-  | { type: 'set-mode'; deviceId: string; mode: string }
-  | { type: 'toggle-playback'; deviceId: string }
-  | { type: 'set-volume'; deviceId: string; value: number }
-  | { type: 'change-track'; deviceId: string; delta: number }
-  | { type: 'toggle-expanded'; deviceId: string }
-  | { type: 'set-expanded'; deviceId: string; value: boolean }
-  | { type: 'set-program'; deviceId: string; program: string }
-  | { type: 'toggle-option'; deviceId: string; option: string }
-  | { type: 'start-dishwasher'; deviceId: string }
-  | { type: 'tick-dishwashers' }
-  | { type: 'group-device'; sourceId: string; targetId: string }
-  | { type: 'ungroup-device'; deviceId: string };
-
-export function getDeviceStatus(device: Device): string {
-  switch (device.kind) {
-    case 'light':
-      return device.active ? `${device.brightness ?? 100}% brightness` : 'Off';
-    case 'climate':
-      return device.mode === 'off' ? 'Off' : `${device.currentTemperature ?? '—'}° inside`;
-    case 'media':
-      if (!device.active) return 'Off';
-      if (!device.playing) return 'Paused';
-      return device.tracks?.[device.track ?? 0] ?? 'Playing in this room';
-    case 'dishwasher':
-      if (device.running) return `${device.progress ?? 0}% · ${device.program}`;
-      return device.progress === 100 ? 'Cycle complete' : device.program ?? 'Ready';
-    case 'scene':
-      return device.active ? 'Active' : 'Ready';
-    case 'sensor':
-      return `${device.value ?? '—'}${device.unit ?? ''}`;
-  }
-}
+export type HomeState = { entities: Record<string, Device>; lanes: Lane[] }
