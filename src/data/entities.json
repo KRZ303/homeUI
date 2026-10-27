@@ -1,0 +1,2256 @@
+{
+  "light_salon": {
+    "id": "light_salon",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Extended Color Light (0x010D)",
+    "title": "salon",
+    "iconType": "lucide",
+    "icon": "Sofa",
+    "on": true,
+    "brightness": 68,
+    "colorTemp": 3200,
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "warm",
+        "label": "2700K",
+        "iconType": "lucide",
+        "icon": "Flame",
+        "active": true
+      },
+      {
+        "id": "day",
+        "label": "4000K",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": false
+      },
+      {
+        "id": "night",
+        "label": "Noc 20%",
+        "iconType": "lucide",
+        "icon": "Moon",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "lampa",
+        "label": "Lampa",
+        "icon": "floor-lamp",
+        "active": true,
+        "brightness": 75,
+        "type": "oval_pill"
+      },
+      {
+        "id": "grzybek",
+        "label": "Grzybek",
+        "icon": "mushroom",
+        "active": true,
+        "brightness": 60,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "light_tv": {
+    "id": "light_tv",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Dimmable Light Strip (0x0101)",
+    "title": "TV",
+    "iconType": "mdi",
+    "icon": "led-strip",
+    "on": false,
+    "brightness": 45,
+    "colorTemp": 2700,
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "sync",
+        "label": "HDMI Sync",
+        "iconType": "lucide",
+        "icon": "Tv",
+        "active": false
+      },
+      {
+        "id": "bias",
+        "label": "Bias 6500K",
+        "iconType": "lucide",
+        "icon": "Sparkles",
+        "active": true
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "led_tv_film",
+        "label": "LED TV - film",
+        "icon": "movie-check",
+        "active": false,
+        "brightness": 40,
+        "type": "ghost_momentary"
+      }
+    ]
+  },
+  "light_kuchnia": {
+    "id": "light_kuchnia",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Color Temp Pendant (0x010C)",
+    "title": "kuchnia",
+    "iconType": "mdi",
+    "icon": "pendant-lamps",
+    "on": true,
+    "brightness": 80,
+    "colorTemp": 4000,
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "hideSubtitleWhenOn": false,
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "blat",
+        "label": "Blat 100%",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": true
+      },
+      {
+        "id": "kolacja",
+        "label": "Kolacja",
+        "iconType": "lucide",
+        "icon": "Utensils",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "okno_salon",
+        "label": "okno i salon",
+        "icon": "bulbs-off",
+        "active": false,
+        "brightness": 50,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "group_roslinki": {
+    "id": "group_roslinki",
+    "column": "lights",
+    "type": "group_tile",
+    "matterType": "Matter 1.5/1.6 Grow Light Group + Soil Sensor (0x0045)",
+    "title": "roślinki",
+    "iconType": "lucide",
+    "icon": "Sprout",
+    "soilMoisture": "64% wilg.",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "uv_boost",
+        "label": "Boost UV",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": true
+      },
+      {
+        "id": "cycle_12h",
+        "label": "Cykl 12h",
+        "iconType": "lucide",
+        "icon": "Clock",
+        "active": true
+      }
+    ],
+    "members": [
+      {
+        "id": "plant_sofa",
+        "label": "Kanapa",
+        "iconType": "lucide",
+        "icon": "Sofa",
+        "active": true
+      },
+      {
+        "id": "plant_bed",
+        "label": "Sypialnia",
+        "iconType": "lucide",
+        "icon": "Bed",
+        "active": true
+      },
+      {
+        "id": "plant_desk1",
+        "label": "Biuro L",
+        "iconType": "mdi",
+        "icon": "office-chair",
+        "active": true
+      },
+      {
+        "id": "plant_desk2",
+        "label": "Biuro P",
+        "iconType": "mdi",
+        "icon": "office-chair",
+        "active": true
+      }
+    ]
+  },
+  "light_lozko": {
+    "id": "light_lozko",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Dimmable Light (0x0101)",
+    "title": "łóżko",
+    "iconType": "mdi",
+    "icon": "led-strip",
+    "on": false,
+    "brightness": 35,
+    "colorTemp": 2400,
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "read",
+        "label": "Czytanie",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": false
+      }
+    ],
+    "secondaryButtons": []
+  },
+  "light_lampka": {
+    "id": "light_lampka",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 NFC-Commissioned Bulb (0x0101)",
+    "title": "lampka",
+    "iconType": "mdi",
+    "icon": "table-lamp",
+    "on": false,
+    "brightness": 55,
+    "colorTemp": 2900,
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [],
+    "secondaryButtons": []
+  },
+  "scene_sen": {
+    "id": "scene_sen",
+    "column": "lights",
+    "type": "scene_pill",
+    "matterType": "Matter 1.6 Scene Recall Cluster (0x0062)",
+    "title": "Sen",
+    "iconType": "lucide",
+    "icon": "Moon",
+    "active": false,
+    "span": {
+      "c": 1,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 1,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": []
+  },
+  "sensor_lux_salon": {
+    "id": "sensor_lux_salon",
+    "column": "lights",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Illuminance & Temp Sensor (0x0400)",
+    "title": "natężenie",
+    "iconType": "lucide",
+    "icon": "Sun",
+    "span": {
+      "c": 1,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 1,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "range_24h",
+        "label": "24h",
+        "iconType": "lucide",
+        "icon": "Clock",
+        "active": true
+      }
+    ],
+    "series": [
+      {
+        "id": "lux",
+        "label": "Natężenie światła",
+        "current": "420",
+        "unit": "lx",
+        "color": "#FBBF24",
+        "fill": true,
+        "min": "0",
+        "minTime": "03:15",
+        "max": "890",
+        "maxTime": "13:40",
+        "points": [
+          5,
+          2,
+          0,
+          18,
+          95,
+          240,
+          510,
+          780,
+          890,
+          740,
+          520,
+          420
+        ]
+      }
+    ]
+  },
+  "cover_roleta": {
+    "id": "cover_roleta",
+    "column": "lights",
+    "type": "vertical_blind",
+    "matterType": "Matter 1.5/1.6 Modular Window Covering (0x0202)",
+    "title": "roleta",
+    "iconType": "mdi",
+    "icon": "window-shutter",
+    "position": 65,
+    "tilt": 40,
+    "span": {
+      "c": 2,
+      "r": 3
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 3
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "tilt_45",
+        "label": "Lamele 45°",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": true
+      },
+      {
+        "id": "privacy_0",
+        "label": "0° Noc",
+        "iconType": "lucide",
+        "icon": "Moon",
+        "active": false
+      }
+    ]
+  },
+  "plug_biurko": {
+    "id": "plug_biurko",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Dimmable Plug-in Unit + Power Meter (0x010B)",
+    "title": "wtyczka biuro",
+    "iconType": "lucide",
+    "icon": "Plug",
+    "on": true,
+    "brightness": 100,
+    "powerWatts": "142 W",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "eco_off",
+        "label": "Auto-Off",
+        "iconType": "lucide",
+        "icon": "Clock",
+        "active": true
+      }
+    ],
+    "secondaryButtons": []
+  },
+  "speaker_salon": {
+    "id": "speaker_salon",
+    "column": "lights",
+    "type": "slider_light",
+    "matterType": "Matter 1.6 Smart Speaker / Audio Output (0x0022)",
+    "title": "głośnik Sonos",
+    "iconType": "lucide",
+    "icon": "Volume2",
+    "on": true,
+    "brightness": 48,
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "play",
+        "label": "Play/Pause",
+        "iconType": "lucide",
+        "icon": "Play",
+        "active": true
+      },
+      {
+        "id": "cast",
+        "label": "AirPlay",
+        "iconType": "lucide",
+        "icon": "Radio",
+        "active": false
+      }
+    ],
+    "secondaryButtons": []
+  },
+  "ambient_context_salon": {
+    "id": "ambient_context_salon",
+    "column": "lights",
+    "type": "matter_context_tile",
+    "matterType": "Matter 1.6 Ambient Context Sensor (Provisional)",
+    "title": "kontekst AI",
+    "iconType": "lucide",
+    "icon": "Eye",
+    "active": true,
+    "activity": "2 osoby • Relaks na kanapie",
+    "soundContext": "Cicha muzyka • Brak alarmów",
+    "prediction": "Sugestia: Scena Film o 20:30",
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "mmwave",
+        "label": "mmWave",
+        "iconType": "lucide",
+        "icon": "Waves",
+        "active": true
+      },
+      {
+        "id": "audio_ai",
+        "label": "Audio AI",
+        "iconType": "lucide",
+        "icon": "Volume2",
+        "active": true
+      },
+      {
+        "id": "auto_scene",
+        "label": "Sugestie",
+        "iconType": "lucide",
+        "icon": "Sparkles",
+        "active": true
+      }
+    ]
+  },
+  "sensor_multi_heating_3x3": {
+    "id": "sensor_multi_heating_3x3",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Multi-Zone Temp & Heating Telemetry (24h)",
+    "title": "temperatura i grzanie 24h",
+    "iconType": "lucide",
+    "icon": "Thermometer",
+    "span": {
+      "c": 3,
+      "r": 3
+    },
+    "defaultSpan": {
+      "c": 3,
+      "r": 3
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "extrema",
+        "label": "Min/Max",
+        "iconType": "lucide",
+        "icon": "Activity",
+        "active": true
+      },
+      {
+        "id": "axis",
+        "label": "Oś Y",
+        "iconType": "lucide",
+        "icon": "Gauge",
+        "active": true
+      }
+    ],
+    "rightAxisMax": "110",
+    "rightAxisMin": "0",
+    "steppedAreaPoints": [
+      65,
+      65,
+      78,
+      78,
+      45,
+      92,
+      92,
+      58,
+      58,
+      74,
+      62,
+      58
+    ],
+    "series": [
+      {
+        "id": "temp_salon",
+        "label": "salon",
+        "current": "23,14",
+        "unit": "°C",
+        "color": "#FF2E4C",
+        "min": "19,87",
+        "minTime": "05:20",
+        "max": "24,87",
+        "maxTime": "14:10",
+        "points": [
+          21.4,
+          22.1,
+          22.8,
+          21.2,
+          22.4,
+          23.8,
+          22.5,
+          22.3,
+          22.9,
+          23.4,
+          23.1,
+          23.14
+        ]
+      },
+      {
+        "id": "temp_biuro",
+        "label": "biuro",
+        "current": "23,35",
+        "unit": "°C",
+        "color": "#00F0FF",
+        "min": "20,40",
+        "minTime": "06:00",
+        "max": "24,74",
+        "maxTime": "13:35",
+        "points": [
+          21.1,
+          21.8,
+          22.3,
+          20.6,
+          22.5,
+          24.7,
+          23.9,
+          22.7,
+          23.1,
+          23.2,
+          23.3,
+          23.35
+        ]
+      },
+      {
+        "id": "temp_sypialnia",
+        "label": "sypialnia",
+        "current": "21,06",
+        "unit": "°C",
+        "color": "#7CE38B",
+        "min": "19,87",
+        "minTime": "04:45",
+        "max": "22,93",
+        "maxTime": "00:30",
+        "points": [
+          21.9,
+          21.8,
+          20.9,
+          20.4,
+          20.7,
+          20.8,
+          20.5,
+          20.4,
+          20.6,
+          20.9,
+          21,
+          21.06
+        ]
+      }
+    ]
+  },
+  "sensor_co2_1x1": {
+    "id": "sensor_co2_1x1",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 CO₂ Air Quality Sensor (0x040D)",
+    "title": "CO₂ biuro",
+    "iconType": "lucide",
+    "icon": "Wind",
+    "span": {
+      "c": 1,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 1,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [],
+    "series": [
+      {
+        "id": "co2",
+        "label": "Stężenie CO₂",
+        "current": "540",
+        "unit": "ppm",
+        "color": "#73B7B2",
+        "fill": true,
+        "min": "415",
+        "minTime": "04:10",
+        "max": "845",
+        "maxTime": "15:20",
+        "points": [
+          440,
+          425,
+          415,
+          460,
+          580,
+          720,
+          845,
+          760,
+          640,
+          590,
+          555,
+          540
+        ]
+      }
+    ]
+  },
+  "sensor_balkon_1x1": {
+    "id": "sensor_balkon_1x1",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Outdoor Weather Sensor (0x0302)",
+    "title": "balkon",
+    "iconType": "lucide",
+    "icon": "Cloud",
+    "span": {
+      "c": 1,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 1,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [],
+    "series": [
+      {
+        "id": "balkon_temp",
+        "label": "Temperatura",
+        "current": "5,73",
+        "unit": "°C",
+        "color": "#38BDF8",
+        "min": "5,69",
+        "minTime": "20:00",
+        "max": "13,41",
+        "maxTime": "13:39",
+        "points": [
+          12.8,
+          12.1,
+          10.9,
+          9.4,
+          8.2,
+          11.5,
+          13.41,
+          10.8,
+          8.1,
+          6.9,
+          5.9,
+          5.73
+        ]
+      },
+      {
+        "id": "balkon_hum",
+        "label": "Wilgotność",
+        "current": "85,6",
+        "unit": "%",
+        "color": "#C084FC",
+        "fill": true,
+        "min": "64,2",
+        "minTime": "13:45",
+        "max": "94,55",
+        "maxTime": "05:30",
+        "points": [
+          78,
+          82,
+          88,
+          94.55,
+          89,
+          71,
+          64.2,
+          74,
+          81,
+          83,
+          85,
+          85.6
+        ]
+      }
+    ]
+  },
+  "sensor_lazienka_1x1": {
+    "id": "sensor_lazienka_1x1",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Humidity & Temp Sensor (0x0405)",
+    "title": "łazienka",
+    "iconType": "lucide",
+    "icon": "Droplets",
+    "span": {
+      "c": 1,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 1,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [],
+    "series": [
+      {
+        "id": "laz_temp",
+        "label": "Temperatura",
+        "current": "24,55",
+        "unit": "°C",
+        "color": "#C084FC",
+        "min": "22,85",
+        "minTime": "06:15",
+        "max": "25,85",
+        "maxTime": "19:40",
+        "points": [
+          23.1,
+          23,
+          22.85,
+          23.1,
+          23.2,
+          23.4,
+          25.85,
+          24.9,
+          24.4,
+          24.5,
+          24.52,
+          24.55
+        ]
+      },
+      {
+        "id": "laz_hum",
+        "label": "Wilgotność",
+        "current": "56,56",
+        "unit": "%",
+        "color": "#3B82F6",
+        "fill": true,
+        "min": "48,86",
+        "minTime": "12:00",
+        "max": "74,72",
+        "maxTime": "19:35",
+        "points": [
+          51,
+          50,
+          49,
+          48.86,
+          50,
+          52,
+          74.72,
+          65,
+          58,
+          57,
+          56.8,
+          56.56
+        ]
+      }
+    ]
+  },
+  "sensor_salon_2x2": {
+    "id": "sensor_salon_2x2",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Combined Temp & Relative Humidity (24h)",
+    "title": "salon 24h",
+    "iconType": "lucide",
+    "icon": "Thermometer",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "range_24h",
+        "label": "24h",
+        "iconType": "lucide",
+        "icon": "Clock",
+        "active": true
+      }
+    ],
+    "series": [
+      {
+        "id": "sal_temp",
+        "label": "Temperatura",
+        "current": "23,14",
+        "unit": "°C",
+        "color": "#C084FC",
+        "min": "21,65",
+        "minTime": "05:40",
+        "max": "24,65",
+        "maxTime": "14:15",
+        "points": [
+          22.1,
+          23.2,
+          22.9,
+          23.4,
+          23.5,
+          22.8,
+          22.6,
+          23.1,
+          22.9,
+          23.8,
+          23.1,
+          23.14
+        ]
+      },
+      {
+        "id": "sal_hum",
+        "label": "Wilgotność",
+        "current": "42,2",
+        "unit": "%",
+        "color": "#3B82F6",
+        "fill": true,
+        "min": "42,27",
+        "minTime": "16:10",
+        "max": "48,4",
+        "maxTime": "08:25",
+        "points": [
+          44.2,
+          46.8,
+          43.1,
+          45.9,
+          47.2,
+          48.4,
+          46.1,
+          44.8,
+          43.5,
+          42.9,
+          42.4,
+          42.2
+        ]
+      }
+    ]
+  },
+  "sensor_biuro_2x2": {
+    "id": "sensor_biuro_2x2",
+    "column": "climate",
+    "type": "sensor_graph",
+    "matterType": "Matter 1.6 Combined Temp & Relative Humidity (24h)",
+    "title": "biuro 24h",
+    "iconType": "lucide",
+    "icon": "Thermometer",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": true
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "range_24h",
+        "label": "24h",
+        "iconType": "lucide",
+        "icon": "Clock",
+        "active": true
+      }
+    ],
+    "series": [
+      {
+        "id": "biu_temp",
+        "label": "Temperatura",
+        "current": "23,35",
+        "unit": "°C",
+        "color": "#C084FC",
+        "min": "21,74",
+        "minTime": "06:10",
+        "max": "24,74",
+        "maxTime": "13:50",
+        "points": [
+          22.4,
+          23,
+          21.8,
+          22.9,
+          23.5,
+          24.74,
+          23.8,
+          23.1,
+          23.3,
+          23.4,
+          23.2,
+          23.35
+        ]
+      },
+      {
+        "id": "biu_hum",
+        "label": "Wilgotność",
+        "current": "45,26",
+        "unit": "%",
+        "color": "#3B82F6",
+        "fill": true,
+        "min": "44,18",
+        "minTime": "17:00",
+        "max": "51,16",
+        "maxTime": "07:45",
+        "points": [
+          49.5,
+          48.2,
+          46.1,
+          47.8,
+          51.16,
+          48.9,
+          46.2,
+          45.8,
+          45.1,
+          44.6,
+          45,
+          45.26
+        ]
+      }
+    ]
+  },
+  "hvac_global": {
+    "id": "hvac_global",
+    "column": "climate",
+    "type": "hvac_global_modes",
+    "matterType": "Matter 1.6 HVAC System Coordinator",
+    "title": "Tryb HVAC",
+    "modes": {
+      "cool": false,
+      "auto": true,
+      "heat": true
+    },
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "thermostat_biuro": {
+    "id": "thermostat_biuro",
+    "column": "climate",
+    "type": "simple_thermostat",
+    "matterType": "Matter 1.6 Thermostat w/ Suggestions (0x0301)",
+    "title": "biuro",
+    "demand": 58,
+    "targetTemp": 24,
+    "measuredTemp": 23.4,
+    "preset": "Komfort",
+    "matterSuggestion": {
+      "active": true,
+      "suggestedTemp": 21.5,
+      "source": "Taryfa Eco (Szczyt energetyczny)",
+      "status": "Wstrzymano (Ręczna zmiana użytkownika)"
+    },
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "thermostat_salon": {
+    "id": "thermostat_salon",
+    "column": "climate",
+    "type": "simple_thermostat",
+    "matterType": "Matter 1.6 Thermostat w/ Suggestions (0x0301)",
+    "title": "salon",
+    "demand": 0,
+    "targetTemp": 24,
+    "measuredTemp": 24.37,
+    "preset": "Eco",
+    "matterSuggestion": {
+      "active": true,
+      "suggestedTemp": 22,
+      "source": "Sugestia obecności Matter 1.6",
+      "status": "Zaakceptowano przez termostat"
+    },
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "thermostat_sypialnia": {
+    "id": "thermostat_sypialnia",
+    "column": "climate",
+    "type": "simple_thermostat",
+    "matterType": "Matter 1.6 Thermostat w/ Suggestions (0x0301)",
+    "title": "sypialnia",
+    "demand": 0,
+    "targetTemp": 19,
+    "measuredTemp": 22.52,
+    "preset": "Noc",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "ac_salon": {
+    "id": "ac_salon",
+    "column": "climate",
+    "type": "rich_ac_row",
+    "matterType": "Matter 1.6 Room Air Conditioner (0x0072)",
+    "title": "salon",
+    "measuredTemp": 24.37,
+    "targetTemp": 22,
+    "on": true,
+    "swing": true,
+    "fan": true,
+    "ionizer": false,
+    "fanSpeedPct": 60,
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": []
+  },
+  "ac_sypialnia": {
+    "id": "ac_sypialnia",
+    "column": "climate",
+    "type": "rich_ac_row",
+    "matterType": "Matter 1.6 Room Air Conditioner (0x0072)",
+    "title": "sypialnia",
+    "measuredTemp": 22.52,
+    "targetTemp": 20.5,
+    "on": false,
+    "swing": false,
+    "fan": false,
+    "ionizer": false,
+    "fanSpeedPct": 40,
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": []
+  },
+  "heat_pump_dom": {
+    "id": "heat_pump_dom",
+    "column": "climate",
+    "type": "slider_light",
+    "matterType": "Matter 1.4/1.6 Heat Pump (0x0309)",
+    "title": "pompa ciepła",
+    "iconType": "lucide",
+    "icon": "Flame",
+    "on": true,
+    "brightness": 62,
+    "colorTemp": 3500,
+    "customSubtitle": "COP 4,6 • Zasilanie 34°C",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "sg_ready",
+        "label": "SG-Ready PV",
+        "iconType": "lucide",
+        "icon": "Zap",
+        "active": true
+      },
+      {
+        "id": "silent",
+        "label": "Tryb Cichy",
+        "iconType": "lucide",
+        "icon": "Moon",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "hp_eco",
+        "label": "Krzywa Eco",
+        "icon": "ionizer",
+        "active": true,
+        "brightness": 60,
+        "type": "oval_pill"
+      },
+      {
+        "id": "hp_cwu",
+        "label": "CWU 52°C",
+        "icon": "ac-swing",
+        "active": true,
+        "brightness": 80,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "air_purifier_salon": {
+    "id": "air_purifier_salon",
+    "column": "climate",
+    "type": "slider_light",
+    "matterType": "Matter 1.2/1.6 Air Purifier + AQI Sensor (0x002D)",
+    "title": "oczyszczacz",
+    "iconType": "lucide",
+    "icon": "Wind",
+    "on": true,
+    "brightness": 45,
+    "customSubtitle": "PM2.5: 6 µg/m³ • HEPA 88%",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "ion",
+        "label": "Jonizator",
+        "iconType": "mdi",
+        "icon": "ionizer",
+        "active": true
+      },
+      {
+        "id": "uv",
+        "label": "UV-C",
+        "iconType": "lucide",
+        "icon": "Sparkles",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "pur_auto",
+        "label": "Auto AQI",
+        "icon": "ionizer",
+        "active": true,
+        "brightness": 50,
+        "type": "oval_pill"
+      },
+      {
+        "id": "pur_night",
+        "label": "Cichy 18dB",
+        "icon": "bulbs-off",
+        "active": false,
+        "brightness": 20,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "water_heater_cwu": {
+    "id": "water_heater_cwu",
+    "column": "climate",
+    "type": "simple_thermostat",
+    "matterType": "Matter 1.4/1.6 Water Heater (0x050F)",
+    "title": "bojler CWU",
+    "demand": 65,
+    "targetTemp": 55,
+    "measuredTemp": 49.5,
+    "preset": "Legionella OK",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "ventilation_reku": {
+    "id": "ventilation_reku",
+    "column": "climate",
+    "type": "slider_light",
+    "matterType": "Matter 1.2/1.6 Fan & HRV Control (0x002B)",
+    "title": "rekuperacja",
+    "iconType": "lucide",
+    "icon": "Fan",
+    "on": true,
+    "brightness": 55,
+    "customSubtitle": "CO₂ 540 ppm • Odzysk 89%",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "bypass",
+        "label": "By-pass",
+        "iconType": "lucide",
+        "icon": "Wind",
+        "active": false
+      },
+      {
+        "id": "boost",
+        "label": "Kominek",
+        "iconType": "lucide",
+        "icon": "Flame",
+        "active": true
+      }
+    ],
+    "secondaryButtons": []
+  },
+  "media_tv": {
+    "id": "media_tv",
+    "column": "appliances",
+    "type": "stateful_tv",
+    "matterType": "Matter 1.6 Casting Video Player (0x0023)",
+    "title": "TV",
+    "on": true,
+    "playing": true,
+    "source": "Netflix • 4K",
+    "volume": 42,
+    "muted": false,
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": []
+  },
+  "appliance_zmywara": {
+    "id": "appliance_zmywara",
+    "column": "appliances",
+    "type": "stateful_dishwasher",
+    "matterType": "Matter 1.2/1.6 Dishwasher (0x0075)",
+    "title": "zmywara",
+    "iconName": "door-closed",
+    "doorClosed": true,
+    "state": "idle",
+    "progress": 34,
+    "remainingMinutes": 78,
+    "delay": "0:00",
+    "programme": "Intensywny 70°C",
+    "cleanPlus": false,
+    "speedPlus": true,
+    "dryPlus": false,
+    "waterTemp": 70,
+    "span": {
+      "c": 4,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 2
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "appliance_pralka": {
+    "id": "appliance_pralka",
+    "column": "appliances",
+    "type": "stateful_dishwasher",
+    "matterType": "Matter 1.2/1.6 Laundry Washer + Dryer (0x0073)",
+    "title": "pralka",
+    "iconName": "washing-machine",
+    "doorClosed": true,
+    "state": "running",
+    "progress": 64,
+    "remainingMinutes": 28,
+    "delay": "0:00",
+    "programme": "Bawełna Eco 40°C • 1200 obr.",
+    "cleanPlus": true,
+    "speedPlus": true,
+    "dryPlus": false,
+    "waterTemp": 40,
+    "span": {
+      "c": 4,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 2
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "appliance_lodowka": {
+    "id": "appliance_lodowka",
+    "column": "appliances",
+    "type": "slider_light",
+    "matterType": "Matter 1.2/1.6 Temperature Controlled Cabinet / Fridge (0x0071)",
+    "title": "lodówka Samsung",
+    "iconType": "mdi",
+    "icon": "fridge",
+    "on": true,
+    "brightness": 75,
+    "customSubtitle": "Chłodziarka 3°C • Zamrażarka -18°C",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "vacation",
+        "label": "Wakacje",
+        "iconType": "lucide",
+        "icon": "Snowflake",
+        "active": false
+      },
+      {
+        "id": "door_alarm",
+        "label": "Alarm drzwi",
+        "iconType": "lucide",
+        "icon": "Bell",
+        "active": true
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "fridge_cool",
+        "label": "SuperCool",
+        "icon": "ionizer",
+        "active": false,
+        "brightness": 100,
+        "type": "oval_pill"
+      },
+      {
+        "id": "fridge_ice",
+        "label": "Kostkarka",
+        "icon": "ac-swing",
+        "active": true,
+        "brightness": 80,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "appliance_piekarnik": {
+    "id": "appliance_piekarnik",
+    "column": "appliances",
+    "type": "slider_light",
+    "matterType": "Matter 1.3/1.6 Oven & Cooktop (0x007B)",
+    "title": "piekarnik & płyta",
+    "iconType": "mdi",
+    "icon": "oven",
+    "on": true,
+    "brightness": 82,
+    "customSubtitle": "Termoobieg 195°C • Sonda 62°C",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "steam",
+        "label": "Para +",
+        "iconType": "lucide",
+        "icon": "Droplets",
+        "active": true
+      },
+      {
+        "id": "pyro",
+        "label": "Pyroliza",
+        "iconType": "lucide",
+        "icon": "Flame",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "oven_grill",
+        "label": "AirFry 200°C",
+        "icon": "oven",
+        "active": true,
+        "brightness": 90,
+        "type": "oval_pill"
+      },
+      {
+        "id": "hood_fan",
+        "label": "Okap bieg 2",
+        "icon": "ac-swing",
+        "active": true,
+        "brightness": 60,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "robot_roborock": {
+    "id": "robot_roborock",
+    "column": "appliances",
+    "type": "robot_vacuum_tile",
+    "matterType": "Matter 1.2/1.6 Robotic Vacuum Cleaner (0x0074)",
+    "title": "robot sprzątający",
+    "on": true,
+    "progress": 52,
+    "mode": "Odkurzanie + Mopowanie",
+    "battery": 94,
+    "rooms": [
+      "Salon",
+      "Kuchnia",
+      "Hol"
+    ],
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "camera_ogrod": {
+    "id": "camera_ogrod",
+    "column": "security",
+    "type": "webrtc_camera_tile",
+    "matterType": "Matter 1.5.1/1.6 WebRTC Security Camera (PTZ + Multi-Stream)",
+    "title": "kamera podjazd",
+    "on": true,
+    "privacy": false,
+    "ptzPreset": "Brama & Podjazd",
+    "detections": "Osoba (19:42) • Samochód",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": true,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "doorbell_furta": {
+    "id": "doorbell_furta",
+    "column": "security",
+    "type": "webrtc_camera_tile",
+    "matterType": "Matter 1.5.1/1.6 Video Doorbell + Intercom Chime",
+    "title": "wideodomofon",
+    "on": true,
+    "privacy": false,
+    "ptzPreset": "Furta wejściowa • 2-Way Audio",
+    "detections": "Paczka pod drzwiami (16:15)",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "lock_wejscie": {
+    "id": "lock_wejscie",
+    "column": "security",
+    "type": "closure_lock_tile",
+    "matterType": "Matter 1.6 Door Lock w/ UWB & Aliro NFC (0x000A)",
+    "title": "zamek główny",
+    "locked": true,
+    "battery": 88,
+    "lastActor": "UWB Auto-Unlock (Ty)",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "garage_gate": {
+    "id": "garage_gate",
+    "column": "security",
+    "type": "closure_lock_tile",
+    "matterType": "Matter 1.5/1.6 Modular Closure / Garage Door (0x0203)",
+    "title": "brama garażowa",
+    "locked": false,
+    "position": 65,
+    "lastActor": "Otwieranie 65% • Czujnik OK",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "alarm_smoke_co": {
+    "id": "alarm_smoke_co",
+    "column": "security",
+    "type": "matter_smoke_alarm",
+    "matterType": "Matter 1.6 Smoke & CO Alarm w/ Mount Sensor (0x0076)",
+    "title": "czujnik dymu i CO",
+    "mounted": true,
+    "coPpm": 0,
+    "battery": 98,
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "water_valve_ogrod": {
+    "id": "water_valve_ogrod",
+    "column": "security",
+    "type": "closure_lock_tile",
+    "matterType": "Matter 1.3/1.5 Water Valve + Irrigation Soil Sensor (0x0042)",
+    "title": "zawór wody & ogród",
+    "locked": false,
+    "position": 100,
+    "lastActor": "Otwarty • Gleba trawnika 58%",
+    "span": {
+      "c": 2,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 1
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "security_history": {
+    "id": "security_history",
+    "column": "security",
+    "type": "matter_event_history",
+    "matterType": "Matter 1.6 Standardized Security Sensor Event History",
+    "title": "historia zdarzeń (Matter 1.6)",
+    "armed": true,
+    "events": [
+      {
+        "time": "22:14",
+        "label": "Drzwi tarasowe: Zamknięto (Szczelne)"
+      },
+      {
+        "time": "19:42",
+        "label": "Podjazd: Wykryto ruch (Osoba)"
+      },
+      {
+        "time": "16:15",
+        "label": "Furta: Kurier zostawił paczkę"
+      }
+    ],
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "solar_pv": {
+    "id": "solar_pv",
+    "column": "energy",
+    "type": "slider_light",
+    "matterType": "Matter 1.4/1.6 Solar Inverter / PV Array (0x0011)",
+    "title": "fotowoltaika PV",
+    "iconType": "mdi",
+    "icon": "solar-panel",
+    "on": true,
+    "brightness": 74,
+    "customSubtitle": "3,85 kW • Dziś 24,6 kWh",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "mppt",
+        "label": "MPPT Dual",
+        "iconType": "lucide",
+        "icon": "Sun",
+        "active": true
+      },
+      {
+        "id": "zero_export",
+        "label": "Zero-Export",
+        "iconType": "lucide",
+        "icon": "Shield",
+        "active": false
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "pv_self",
+        "label": "Autokonsumpcja",
+        "icon": "ionizer",
+        "active": true,
+        "brightness": 85,
+        "type": "oval_pill"
+      },
+      {
+        "id": "pv_grid",
+        "label": "Eksport 0,9 kW",
+        "icon": "ac-swing",
+        "active": true,
+        "brightness": 40,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "home_battery": {
+    "id": "home_battery",
+    "column": "energy",
+    "type": "slider_light",
+    "matterType": "Matter 1.4/1.6 Battery Storage BESS (0x0018)",
+    "title": "magazyn energii",
+    "iconType": "lucide",
+    "icon": "BatteryCharging",
+    "on": true,
+    "brightness": 86,
+    "customSubtitle": "86% SoC (12,9 kWh) • Taryfa Dynamiczna",
+    "span": {
+      "c": 2,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 2,
+      "r": 2
+    },
+    "expanders": {
+      "down": false,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": true,
+      "presets": false
+    },
+    "nestedTiles": [],
+    "mainButtons": [
+      {
+        "id": "grid_charge",
+        "label": "Tania Taryfa",
+        "iconType": "lucide",
+        "icon": "Zap",
+        "active": true
+      },
+      {
+        "id": "island",
+        "label": "Zasilanie Awaryjne",
+        "iconType": "lucide",
+        "icon": "Shield",
+        "active": true
+      }
+    ],
+    "secondaryButtons": [
+      {
+        "id": "bess_peak",
+        "label": "Peak Shaving",
+        "icon": "ionizer",
+        "active": true,
+        "brightness": 90,
+        "type": "oval_pill"
+      },
+      {
+        "id": "bess_backup",
+        "label": "Rezerwa 20%",
+        "icon": "plug-off",
+        "active": true,
+        "brightness": 20,
+        "type": "oval_pill"
+      }
+    ]
+  },
+  "ev_wallbox": {
+    "id": "ev_wallbox",
+    "column": "energy",
+    "type": "stateful_dishwasher",
+    "matterType": "Matter 1.5/1.6 Bidirectional EVSE Wallbox (V2H + Tariff)",
+    "title": "ładowarka EV Wallbox",
+    "iconName": "ev-car",
+    "doorClosed": true,
+    "state": "running",
+    "progress": 54,
+    "remainingMinutes": 44,
+    "delay": "07:00",
+    "programme": "Tylko Słońce PV + V2H • 11 kW",
+    "cleanPlus": true,
+    "speedPlus": true,
+    "dryPlus": false,
+    "waterTemp": 80,
+    "span": {
+      "c": 4,
+      "r": 2
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 2
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  },
+  "matter_joint_fabric": {
+    "id": "matter_joint_fabric",
+    "column": "energy",
+    "type": "matter_fabric_hub",
+    "matterType": "Matter 1.6 Joint Fabric Datastore + HRAP Thread 1.4 + NFC",
+    "title": "sieć Matter 1.6 Joint Fabric",
+    "on": true,
+    "threadNodes": 64,
+    "ecosystems": [
+      "Home Assistant",
+      "Apple Home",
+      "Google Home"
+    ],
+    "nfcReadyCount": 3,
+    "span": {
+      "c": 4,
+      "r": 1
+    },
+    "defaultSpan": {
+      "c": 4,
+      "r": 1
+    },
+    "expanders": {
+      "down": true,
+      "right": false,
+      "diagonal": false
+    },
+    "expandedContent": {
+      "secondaryButtons": true,
+      "secondarySlider": false,
+      "presets": true
+    },
+    "nestedTiles": []
+  }
+}
